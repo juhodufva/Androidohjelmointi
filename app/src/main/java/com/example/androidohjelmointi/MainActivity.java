@@ -1,5 +1,6 @@
 package com.example.androidohjelmointi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,9 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String TAG="MainActivity";
+    public static final String TAG = "MainActivity";
     private Button testBtn;
     private TextView helloText;
+    private Button playBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         testBtn = findViewById(R.id.button_test);
         helloText = findViewById(R.id.textView2);
+        playBtn = findViewById(R.id.button_play);
         testBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 helloText.setText(R.string.new_welcome_text);
@@ -29,6 +32,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         helloText.findViewById(R.id.textView2);
+        playBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "Play button clicked");
+                handlePlayButtonClick();
+            }
+        });
+    }
+
+    private void init() {
+        Log.i(TAG, "init() function called");
+    }
+
+    private void handlePlayButtonClick() {
+        Intent i = new Intent(this, GameActivity.class);
+        startActivity(i);
     }
 
 

@@ -2,5 +2,11 @@
     <string name="app_name">Androidohjelmointi</string>
     <string name="welcome_text">Hello world</string>
     <string name="new_welcome_text">Hello Lappeenranta</string>
+    <string name="game_button">Play</string>
+    <string name="button_test">Button</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>

@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Log.i(TAG, "Play button clicked");
                 handlePlayButtonClick();
             }

@@ -6,67 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="127dp"
-        android:layout_height="127dp"
-        android:text="Button" />
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="127dp"
-        android:layout_height="127dp"
-        android:text="Button" />
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="127dp"
-        android:layout_height="127dp"
-        android:text="Button" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="127dp"
-        android:layout_height="127dp"
-        android:text="Button" />
-
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="button2"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615"
-        tools:layout_editor_absoluteX="65dp" />
-
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="button3"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584"
-        tools:layout_editor_absoluteX="249dp" />
-
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="button4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.342"
-        tools:layout_editor_absoluteX="65dp" />
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="button5"
+        android:layout_marginTop="284dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="imageButton3,imageButton1,imageButton2,imageButton4"
+        app:flow_wrapMode="aligned"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.359"
-        tools:layout_editor_absoluteX="249dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="409dp"
+        android:layout_height="73dp"
+        android:autoSizeTextType="uniform"
+        android:text="Etsi Parru"
+        app:layout_constraintBottom_toTopOf="@+id/flow4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="61dp"
+        android:layout_height="67dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="381dp"
+        android:layout_height="366dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="324dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

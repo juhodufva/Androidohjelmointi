@@ -6,7 +6,13 @@
     <string name="button_test">Button</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_location">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="Latitude">Latitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="Address">Addres</string>
+    <string name="buttonLocation">Show your location on map</string>
+
+
 
 </resources>

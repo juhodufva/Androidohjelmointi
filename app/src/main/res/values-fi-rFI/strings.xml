@@ -5,4 +5,13 @@
     <string name="new_welcome_text">Hei Lappeenranta</string>
     <string name="game_button">Pelaa</string>
     <string name="button_test">Painike</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Koti</string>
+    <string name="title_location">Työpöytä</string>
+    <string name="title_notifications">Ilmoitukset</string>
+    <string name="Latitude">Leveysaste</string>
+    <string name="Longitude">Pituusaste</string>
+    <string name="Address">Osoite</string>
+    <string name="buttonLocation">Näytä sijaintisi kartalla</string>
+
 </resources>

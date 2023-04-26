@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         testBtn = findViewById(R.id.button_test);
         helloText = findViewById(R.id.textView2);
         playBtn = findViewById(R.id.button_play);
+
+
         testBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 helloText.setText(R.string.new_welcome_text);

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button testBtn;
     private TextView helloText;
     private Button playBtn;
+    private Button taksiBtn;
 
 
     @Override
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn = findViewById(R.id.button_test);
         helloText = findViewById(R.id.textView2);
         playBtn = findViewById(R.id.button_play);
+
 
 
         testBtn.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, GameActivity.class);
         startActivity(i);
     }
+
 
 
 }

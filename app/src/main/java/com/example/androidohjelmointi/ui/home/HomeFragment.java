@@ -28,6 +28,8 @@ public class HomeFragment extends Fragment {
     private Button searhButton;
     private EditText searchCompany;
 
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         HomeViewModel homeViewModel =

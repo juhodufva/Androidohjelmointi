@@ -4,6 +4,7 @@
     <string name="welcome_text">Hei maailma</string>
     <string name="new_welcome_text">Hei Lappeenranta</string>
     <string name="game_button">Pelaa</string>
+    <string name="button_taksi">Taksi</string>
     <string name="button_test">Painike</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Koti</string>

@@ -16,7 +16,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.androidohjelmointi.GameActivity;
 import com.example.androidohjelmointi.R;
-import com.example.androidohjelmointi.YTJ.DataActivity;
 import com.example.androidohjelmointi.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -43,17 +42,10 @@ public class HomeFragment extends Fragment {
         testBtn = root.findViewById(R.id.button_test);
         helloText = root.findViewById(R.id.textView2);
         playBtn = root.findViewById(R.id.button_play);
-        searhButton = root.findViewById(R.id.button_search);
-        searchCompany= root.findViewById(R.id.searchCompany);
+        //searhButton = root.findViewById(R.id.button_search);
+        //searchCompany= root.findViewById(R.id.searchCompany);
 
-        searhButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), DataActivity.class);
-                i.putExtra(searchCompany.getText().toString(), "This is the value for activity");
-                startActivity(i);
-            }
-        });
+
         testBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 helloText.setText(R.string.new_welcome_text);
